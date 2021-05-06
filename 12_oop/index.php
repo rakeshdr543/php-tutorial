@@ -1,5 +1,5 @@
 <?php
-
+echo "hello";
 // What is class and instance
 
 // Create Person class in Person.php
