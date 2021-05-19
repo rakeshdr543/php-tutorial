@@ -16,7 +16,7 @@ $url = 'https://jsonplaceholder.typicode.com/users';
 $user = [
     'name' => 'John Doe',
     'username' => 'john',
-    'email' => 'john@exaple.com'
+    'email' => 'rakesh@exaple.com'
 ];
 
 $ch = curl_init($url);
