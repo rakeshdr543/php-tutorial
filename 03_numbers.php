@@ -1,9 +1,10 @@
 <?php
 
 // Declaring numbers
-
+$a = 10;
+$b = 20;
 // Arithmetic operations
-
+echo $a + $b;
 // Assignment with math operators
 
 // Increment operator
