@@ -80,19 +80,42 @@ echo '</pre>';
 
 // Create an associative array
 
+$person = [
+    'name' => 'Brad',
+    'surname' => 'Traversy',
+    'age' => 30,
+    'hobbies' => ['Tennis', 'Video Games'],
+];
+
 // Get element by key
+echo $person['name'] . '<br>';
 
 // Set element by key
+$person['channel'] = 'TraversyMedia';
 
 // Null coalescing assignment operator. Since PHP 7.4
+$person['address'] ??= 'Unknown';
+echo $person['address'] . '<br>';
 
 // Check if array has specific key
+echo '<pre>';
+var_dump(isset($person['age']));  // Change age into "location"
+echo '</pre>';
 
 // Print the keys of the array
+echo '<pre>';
+var_dump(array_keys($person));
+echo '</pre>';
 
 // Print the values of the array
+echo '<pre>';
+var_dump(array_values($person));
+echo '</pre>';
 
 // Sorting associative arrays by values, by keys
-
+ksort($person); // ksort, krsort, asort, arsort
+echo '<pre>';
+var_dump($person);
+echo '</pre>';
 
 // Two dimensional arrays
